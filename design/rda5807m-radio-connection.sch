@@ -1,0 +1,360 @@
+EESchema Schematic File Version 4
+LIBS:rda5807m-radio-connection-cache
+EELAYER 29 0
+EELAYER END
+$Descr User 9126 7063
+encoding utf-8
+Sheet 1 1
+Title "Connection Diagram of RDA5807M receiver"
+Date "2019-09-11"
+Rev "1.0.0"
+Comp "Dilshan R Jayakody"
+Comment1 "jayakody2000lk@gmail.com"
+Comment2 "http://jayakody2000lk.blogspot.com"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x09 J2
+U 1 1 5D79DA8B
+P 4150 1900
+F 0 "J2" H 4230 1942 50  0000 L CNN
+F 1 "BTN-IN" H 4230 1851 50  0000 L CNN
+F 2 "" H 4150 1900 50  0001 C CNN
+F 3 "~" H 4150 1900 50  0001 C CNN
+	1    4150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5D79F021
+P 3250 1600
+F 0 "SW4" V 3250 1550 50  0000 R CNN
+F 1 "MEMORY2" H 3450 1800 50  0000 R CNN
+F 2 "" H 3250 1800 50  0001 C CNN
+F 3 "~" H 3250 1800 50  0001 C CNN
+	1    3250 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5D79FAB0
+P 2700 1600
+F 0 "SW3" V 2700 1550 50  0000 R CNN
+F 1 "MEMORY1" H 2900 1800 50  0000 R CNN
+F 2 "" H 2700 1800 50  0001 C CNN
+F 3 "~" H 2700 1800 50  0001 C CNN
+	1    2700 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5D7A2917
+P 2150 1600
+F 0 "SW2" V 2150 1550 50  0000 R CNN
+F 1 "TUNE-DOWN" H 2400 1800 50  0000 R CNN
+F 2 "" H 2150 1800 50  0001 C CNN
+F 3 "~" H 2150 1800 50  0001 C CNN
+	1    2150 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D7A2921
+P 1600 1600
+F 0 "SW1" V 1600 1550 50  0000 R CNN
+F 1 "TUNE-UP" H 1800 1800 50  0000 R CNN
+F 2 "" H 1600 1800 50  0001 C CNN
+F 3 "~" H 1600 1800 50  0001 C CNN
+	1    1600 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5D7A43C5
+P 3250 2200
+F 0 "SW8" V 3250 2150 50  0000 R CNN
+F 1 "MEMORY3" H 3450 2400 50  0000 R CNN
+F 2 "" H 3250 2400 50  0001 C CNN
+F 3 "~" H 3250 2400 50  0001 C CNN
+	1    3250 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5D7A43CF
+P 2700 2200
+F 0 "SW7" V 2700 2150 50  0000 R CNN
+F 1 "MEMORY4" H 2900 2400 50  0000 R CNN
+F 2 "" H 2700 2400 50  0001 C CNN
+F 3 "~" H 2700 2400 50  0001 C CNN
+	1    2700 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5D7A43D9
+P 2150 2200
+F 0 "SW6" V 2150 2150 50  0000 R CNN
+F 1 "MEMORY5" H 2350 2400 50  0000 R CNN
+F 2 "" H 2150 2400 50  0001 C CNN
+F 3 "~" H 2150 2400 50  0001 C CNN
+	1    2150 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5D7A43E3
+P 1600 2200
+F 0 "SW5" V 1600 2150 50  0000 R CNN
+F 1 "MEMORY6" H 1800 2400 50  0000 R CNN
+F 2 "" H 1600 2400 50  0001 C CNN
+F 3 "~" H 1600 2400 50  0001 C CNN
+	1    1600 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 1800 1600 1900
+Wire Wire Line
+	2150 1800 2150 1900
+Wire Wire Line
+	2700 1800 2700 1900
+Wire Wire Line
+	3250 1800 3250 1900
+Wire Wire Line
+	1600 1900 2150 1900
+Connection ~ 1600 1900
+Wire Wire Line
+	1600 1900 1600 2000
+Connection ~ 2150 1900
+Wire Wire Line
+	2150 1900 2150 2000
+Wire Wire Line
+	2150 1900 2700 1900
+Connection ~ 2700 1900
+Wire Wire Line
+	2700 1900 2700 2000
+Wire Wire Line
+	2700 1900 3250 1900
+Connection ~ 3250 1900
+Wire Wire Line
+	3250 1900 3250 2000
+Wire Wire Line
+	3250 1400 3250 1350
+Wire Wire Line
+	3250 1350 3700 1350
+Wire Wire Line
+	2700 1400 2700 1300
+Wire Wire Line
+	2700 1300 3750 1300
+Wire Wire Line
+	2150 1400 2150 1250
+Wire Wire Line
+	2150 1250 3800 1250
+Wire Wire Line
+	1600 1400 1600 1200
+Wire Wire Line
+	1600 1200 3850 1200
+Wire Wire Line
+	3700 2000 3950 2000
+Wire Wire Line
+	3250 2400 3250 2450
+Wire Wire Line
+	3250 2450 3700 2450
+Wire Wire Line
+	3700 2450 3700 2000
+Wire Wire Line
+	2700 2400 2700 2500
+Wire Wire Line
+	2700 2500 3750 2500
+Wire Wire Line
+	3750 2500 3750 2100
+Wire Wire Line
+	3750 2100 3950 2100
+Wire Wire Line
+	2150 2400 2150 2550
+Wire Wire Line
+	2150 2550 3800 2550
+Wire Wire Line
+	3800 2550 3800 2200
+Wire Wire Line
+	3800 2200 3950 2200
+Wire Wire Line
+	1600 2400 1600 2600
+Wire Wire Line
+	1600 2600 3850 2600
+Wire Wire Line
+	3850 2600 3850 2300
+Wire Wire Line
+	3850 2300 3950 2300
+Wire Wire Line
+	3850 1600 3950 1600
+Wire Wire Line
+	3850 1200 3850 1600
+Wire Wire Line
+	3800 1700 3950 1700
+Wire Wire Line
+	3800 1250 3800 1700
+Wire Wire Line
+	3750 1800 3950 1800
+Wire Wire Line
+	3750 1300 3750 1800
+Wire Wire Line
+	3700 1900 3950 1900
+Wire Wire Line
+	3700 1350 3700 1900
+Wire Wire Line
+	3950 1500 3900 1500
+Wire Wire Line
+	3900 1500 3900 1150
+Wire Wire Line
+	1300 1900 1300 1150
+Wire Wire Line
+	1300 1150 3900 1150
+Wire Wire Line
+	1300 1900 1600 1900
+$Comp
+L Connector_Generic:Conn_01x05 J6
+U 1 1 5D793976
+P 3350 4350
+F 0 "J6" H 3430 4392 50  0000 L CNN
+F 1 "ROT-ENC" H 3430 4301 50  0000 L CNN
+F 2 "" H 3350 4350 50  0001 C CNN
+F 3 "~" H 3350 4350 50  0001 C CNN
+	1    3350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW7
+U 1 1 5D7941F8
+P 2400 4350
+F 0 "SW7" H 2400 4100 50  0000 C CNN
+F 1 "PEC12R-4025F-S0024" H 2400 4650 50  0000 C CNN
+F 2 "" H 2250 4510 50  0001 C CNN
+F 3 "~" H 2400 4610 50  0001 C CNN
+	1    2400 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 4450 3150 4450
+Wire Wire Line
+	3150 4350 2950 4350
+Wire Wire Line
+	2950 4350 2950 4250
+Wire Wire Line
+	2950 4250 2700 4250
+Wire Wire Line
+	2700 4350 2800 4350
+Wire Wire Line
+	2800 4350 2800 4550
+Wire Wire Line
+	2800 4550 3150 4550
+Wire Wire Line
+	2100 4250 2050 4250
+Wire Wire Line
+	2050 4250 2050 4000
+Wire Wire Line
+	2050 4000 3000 4000
+Wire Wire Line
+	3000 4000 3000 4250
+Wire Wire Line
+	3000 4250 3150 4250
+Wire Wire Line
+	3150 4150 3100 4150
+Wire Wire Line
+	3100 4150 3100 3900
+Wire Wire Line
+	3100 3900 1950 3900
+Wire Wire Line
+	1950 3900 1950 4450
+Wire Wire Line
+	1950 4450 2100 4450
+$Comp
+L Connector:Conn_Coaxial CN1
+U 1 1 5D7A2983
+P 6900 1800
+F 0 "CN1" H 6999 1682 50  0000 L CNN
+F 1 "ANT-IN" H 6999 1773 50  0000 L CNN
+F 2 "" H 6900 1800 50  0001 C CNN
+F 3 " ~" H 6900 1800 50  0001 C CNN
+	1    6900 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5D7A35AA
+P 7550 1800
+F 0 "J3" H 7630 1792 50  0000 L CNN
+F 1 "ANT-IN" H 7630 1701 50  0000 L CNN
+F 2 "" H 7550 1800 50  0001 C CNN
+F 3 "~" H 7550 1800 50  0001 C CNN
+	1    7550 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1800 7350 1800
+Wire Wire Line
+	6900 1600 6900 1500
+Wire Wire Line
+	6900 1500 6400 1500
+Wire Wire Line
+	6400 1500 6400 2050
+Wire Wire Line
+	6400 2050 7250 2050
+Wire Wire Line
+	7250 2050 7250 1900
+Wire Wire Line
+	7250 1900 7350 1900
+$Comp
+L Device:Speaker LS1
+U 1 1 5D7ADC9F
+P 6950 3150
+F 0 "LS1" H 7120 3146 50  0000 L CNN
+F 1 "8R 7W" H 7120 3055 50  0000 L CNN
+F 2 "" H 6950 2950 50  0001 C CNN
+F 3 "~" H 6940 3100 50  0001 C CNN
+	1    6950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5D7AE2A7
+P 6400 3250
+F 0 "J4" H 6318 2925 50  0000 C CNN
+F 1 "SPK-L" H 6318 3016 50  0000 C CNN
+F 2 "" H 6400 3250 50  0001 C CNN
+F 3 "~" H 6400 3250 50  0001 C CNN
+	1    6400 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 3150 6600 3150
+Wire Wire Line
+	6750 3250 6600 3250
+$Comp
+L Device:Speaker LS2
+U 1 1 5D7B2A56
+P 6900 4300
+F 0 "LS2" H 7070 4296 50  0000 L CNN
+F 1 "8R 7W" H 7070 4205 50  0000 L CNN
+F 2 "" H 6900 4100 50  0001 C CNN
+F 3 "~" H 6890 4250 50  0001 C CNN
+	1    6900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5D7B2A60
+P 6350 4400
+F 0 "J5" H 6268 4075 50  0000 C CNN
+F 1 "SPK-R" H 6268 4166 50  0000 C CNN
+F 2 "" H 6350 4400 50  0001 C CNN
+F 3 "~" H 6350 4400 50  0001 C CNN
+	1    6350 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 4300 6550 4300
+Wire Wire Line
+	6700 4400 6550 4400
+$EndSCHEMATC
