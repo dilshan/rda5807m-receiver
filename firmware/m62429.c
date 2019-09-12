@@ -41,16 +41,16 @@ void updateVolumeControl(unsigned char level)
 	// Submit data packet into M62429 controller.
 	for(dataPos = 0; dataPos < 11; dataPos++)
 	{
-		PORTC = PORTC & 0x3F;
+		PORTC &= 0x3F;
 		_delay_us(5);
-		PORTC = PORTC | ((outputData  >> dataPos) & 0x01) << 6;
+		PORTC |= ((outputData  >> dataPos) & 0x01) << 6;
 		_delay_us(5);
-		PORTC = PORTC | 0x80;
+		PORTC |= 0x80;
 		_delay_us(5);
 	}
 	
 	// Send latch signal.
-	PORTC = PORTC | 0x40;
+	PORTC |= 0x40;
 	_delay_us(5);
-	PORTC = PORTC & 0x7F;
+	PORTC &= 0x7F;
 }

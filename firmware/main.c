@@ -87,7 +87,7 @@ int main()
 	wdt_enable(WDTO_1S);
 	
 	// Turn on LCD back-light when system is ready.
-	PORTD = PORTD | 0x02;
+	PORTD |= 0x02;
 	
 	// Start main service loop.
 	while(1)
@@ -149,10 +149,10 @@ int main()
 			}
 			
 			// Update stereo indicator.
-			PORTD = PORTD & 0xFE;
+			PORTD &= 0xFE;
 			if((_receiverInfo[0] & RDA5807_STEREO) != 0x00)
 			{
-				PORTD = PORTD | 0x01;
+				PORTD |= 0x01;
 			}
 			
 			// Check current status of the tunning process.
@@ -256,10 +256,10 @@ int main()
 				readConfigurationFast(_receiverInfo);
 							
 				// Update stereo indicator.
-				PORTD = PORTD & 0xFE;
+				PORTD &= 0xFE;
 				if((_receiverInfo[0] & RDA5807_STEREO) != 0x00)
 				{
-					PORTD = PORTD | 0x01;
+					PORTD |= 0x01;
 				}	
 			}
 			
@@ -444,7 +444,7 @@ void enterVolumeControl()
 
 void enterTunerControl()
 {
-	PORTD = PORTD & 0xFE;
+	PORTD &= 0xFE;
 	_rotaryEncoderPos = _currentConfig.currentChannel;
 	_idleCounter = 0;
 	_indicatorCounter = 0;
