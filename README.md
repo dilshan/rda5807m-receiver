@@ -10,4 +10,4 @@ As mentioned above this design is a quick prototype to test the features of *RDA
 
 -------------------------------------------------------------------------------------------------------------------------
 
-The firmware source codes of this project are released under the terms of the [MIT license](https://github.com/dilshan/rda5807m-receiver/blob/master/LICENSE). All the design files and schematics are released under the [Creative Commons - Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/). 
+The firmware source codes of this project are released under the terms of the [MIT license](https://github.com/dilshan/rda5807m-receiver/blob/master/LICENSE). All the design files and schematics are released under the terms of the [Creative Commons - Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/). 
