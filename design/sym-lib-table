@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name rda5807m-radio)(type Legacy)(uri ${KIPRJMOD}/rda5807m-radio.lib)(options "")(descr ""))
+)
